@@ -1,0 +1,22 @@
+int main() {
+    FILE *fp;
+    char filename[100];
+    char ch;
+    int char_count = 0;
+    int word_count = 0;
+    int line_count = 0;
+    int in_word = 0; // State variable to track if currently inside a word
+
+    printf("Enter the filename: ");
+    scanf("%s", filename);
+
+    fp = fopen(filename, "r");
+
+    if (fp == NULL) {
+        printf("Error: Could not open file %s\n", filename);
+        return 1;
+    }
+
+    // ... (rest of the code)
+    return 0;
+}
